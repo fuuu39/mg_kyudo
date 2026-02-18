@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+.first-view{
+  height: calc(100vh - 110px);
+  background-image: url(../images/main_visual.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.first-view-text{
+  width: 100%;
+  max-width: 2000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10%;
+  padding-bottom: 80px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.first-view-text h1{
+  font-family: "Shippori Mincho", serif;
+  font-weight: lighter;
+  font-size: 120px;
+  line-height: 1.3;
+}
+
+.first-view-text p{
+  font-family: "Shippori Mincho", serif;
+  font-weight: lighter;
+  font-size: 20px;
+  margin-top: 15px;
+  line-height: 1.2;
+}
+
+.lead{
+  max-width: 2000px;
+  margin: 60px auto 60px auto;
+}
+
+.lead p{
+  text-align: center;
+  line-height: 1.8;
+}
+
+.link-button-area{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.link-button{
+  color: #000000;
+  background-color: #fff100;
+  display: inline-block;
+  min-width: 160px;
+  line-height: 50px;
+}
+
+.link-button:hover{
+  background-color: #e4e40ac6;
+}
+
+.jump-button{
+  position: relative;
+  display: inline-block;
+}
+
+.jump-button img{
+  display: block;
+  width: 300px;
+  height: auto;
+  transition: 0.3s;
+}
+
+.jump-button:hover img{
+  transform: scale(1.05);
+}
+
+.jump-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  z-index: 5;
+}
+
+.jump-button::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: 0.3s;
+}
+
+.jump-button:hover::after{
+  background: rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+@media (max-width: 767px){
+
+  .first-view{
+    margin-top: 0px;
+    height: calc(80vh - 60px);
+    /* align-items: flex-start; */
+  }
+
+  .first-view-text{
+    padding-top: 60px;
+    padding-left: 20px;
+  }
+
+  .first-view-text h1{
+    font-size: 42px;
+    line-height: 1.3;
+  }
+
+  .first-view-text p{
+    font-size: 14px;
+    margin-top: 15px;
+    line-height: 1.6;
+  }
+
+  .lead{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .lead p{
+    text-align: left;
+  }
+
+}
