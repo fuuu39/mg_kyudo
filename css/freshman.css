@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+.main{
+  margin-top: 90px;
+}
+
+.title{
+  height: 500px;
+  background-image: url(../images/fre-main.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 10px #000000;
+  font-family: "Zen Old Mincho", serif;
+  font-style: normal;
+}
+
+.link{
+  color: #fff100;
+}
+
+.title h1{
+  margin-left: 35px;
+  font-size: 50px;
+}
+
+.title p{
+  font-size: 20px;
+  line-height: 1.6;
+  margin-top: 60px;
+  margin-left: 40px;
+}
+
+.intro{
+  font-family: "Zen Old Mincho", serif;
+  font-style: normal;
+  margin-top: 60px;
+  margin-left: 40px;
+}
+
+.intro h2{
+  padding: 15px ;
+  border-left: 1px solid #fff100;
+  border-bottom: 1px solid #fff100;
+  color: #fff100;
+  font-size: 37px;
+  display: inline-block;
+}
+
+.intro h3{
+  margin-left: 10px;
+  margin-top: 30px;
+  font-size: 27px;
+}
+
+.intro h4{
+  font-family: "Zen Old Mincho", serif;
+  font-style: normal;
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: normal;
+}
+
+.intro p{
+  padding: 15px;
+  border-left: 1px solid #ffffff;
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.entry{
+  font-family: "Zen Old Mincho", serif;
+  font-style: normal;
+  margin-top: 60px;
+  margin-left: 40px;  
+}
+
+.entry h2{
+  padding: 15px ;
+  border-left: 1px solid #fff100;
+  border-bottom: 1px solid #fff100;
+  color: #fff100;
+  font-size: 37px;
+  display: inline-block;  
+}
+
+.entry h3{
+  margin-left: 10px;
+  margin-top: 30px;
+  font-size: 27px;  
+}
+.entry h4{
+  font-family: "Zen Old Mincho", serif;
+  font-style: normal;
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: normal;
+}
+
+.entry p{
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.question{
+  font-family: "Zen Old Mincho", serif;
+  font-style: normal;
+  margin-top: 60px;
+  margin-left: 40px;  
+}
+
+.question h2{
+  padding: 15px ;
+  border-left: 1px solid #fff100;
+  border-bottom: 1px solid #fff100;
+  color: #fff100;
+  font-size: 37px;
+  display: inline-block;  
+  margin-bottom: 20px;
+}
+
+.qa {
+    max-width: 90%;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 2%), 0 2px 3px -2px rgba(0 0 0 / 5%);
+    background-color: #232323;
+}
+
+.qa summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1em 2em 1em 3em;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.qa summary::before,
+.qa p::before {
+    position: absolute;
+    left: 1em;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+.qa summary::before {
+    color: #fff100;
+    content: "Q";
+}
+
+.qa summary::after {
+    transform: translateY(-25%) rotate(45deg);
+    width: 7px;
+    height: 7px;
+    margin-left: 10px;
+    border-bottom: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    content: '';
+    transition: transform .5s;
+}
+
+.qa[open] summary::after {
+    transform: rotate(225deg);
+}
+
+.qa p {
+    position: relative;
+    transform: translateY(-10px);
+    opacity: 0;
+    margin: 0;
+    padding: .3em 3em 1.5em;
+    color: #ffffff;
+    transition: transform .5s, opacity .5s;
+}
+
+.qa[open] p {
+    transform: none;
+    opacity: 1;
+}
+
+.qa p::before {
+    color: #f91c1c;
+    line-height: 1.2;
+    content: "A";
+}
