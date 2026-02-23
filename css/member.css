@@ -65,7 +65,29 @@
   font-size: 16px;
 }
 
-.a-member p{
+.txt{
+  margin-top: 5px;
+  position: relative;
+  /* color: #ffffff;
+  background-color: #232323;
+  border-radius: 10px; */
+  padding: 5px;  
+  /* border-top: 2px solid #232323; */
+} 
+
+.txt::after{
+  content: '';
+  display: block;
+  width: 35px;
+  height: 2px;
+  background-color: #232323;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.a-member p{ 
   background-color: rgb(43, 42, 42);
   display: flex;
   height: 270px;
@@ -89,7 +111,7 @@
 
 .space{
   color: #ffffff;
-  /* margin-top: 10px; */
+  margin-top: 10px;
 }
 
 .role{
