@@ -57,6 +57,7 @@
 }
 
 .a-member h3{
+  color: #ffffff;
   font-size: 20px;
 }
 
@@ -84,6 +85,11 @@
   border-radius: 10px;
   height: 270px;
   object-fit: cover;
+}
+
+.space{
+  color: #ffffff;
+  /* margin-top: 10px; */
 }
 
 .role{
