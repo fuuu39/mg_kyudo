@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+.main{
+  margin-top: 90px;
+}
+
+.title{
+  height: 500px;
+  background-image: url(../images/fre-main.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 10px #000000;
+  font-family: "Zen Old Mincho", serif;
+  font-style: normal;
+}
+
+.link{
+  color: #fff100;
+}
+
+.title h1{
+  margin-left: 35px;
+  font-size: 50px;
+}
+
+.title p{
+  font-size: 20px;
+  line-height: 1.6;
+  margin-top: 60px;
+  margin-left: 40px;
+}
+
+@media (max-width: 767px){
+
+.main{
+  /* margin-top: 90px; */
+  padding-top: 0px;
+  margin-top: 60px;
+}
+
+.title{
+  height: 600px;
+  background-image: url(../images/fre-main.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 10px #000000;
+  font-family: "Zen Old Mincho", serif;
+  font-style: normal;
+}
+
+.link{
+  color: #fff100;
+}
+
+.title h1{
+  margin-left: 25px;
+  font-size: 30px;
+}
+
+.title p{
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 60px;
+  margin-left: 25px;
+  margin-right: 20px;
+}
+
+}
