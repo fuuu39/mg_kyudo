@@ -51,12 +51,15 @@
 }
 
 .a-member{
+  background-color: #1c1c1c;
+  border-radius: 8px;
   text-align: center;
   padding: 15px;
   line-height: 1.6;
 }
 
 .a-member h3{
+  margin-top: 10px;
   color: #ffffff;
   font-size: 20px;
 }
@@ -80,7 +83,7 @@
   display: block;
   width: 35px;
   height: 2px;
-  background-color: #232323;
+  background-color: #7b7a7a;
   position: absolute;
   top: 0px;
   left: 50%;
