@@ -35,6 +35,38 @@
   margin-left: 40px;
 }
 
+.intro{
+  font-family: "Zen Old Mincho", serif;
+  font-style: normal;
+  margin-top: 60px;
+  margin-left: 40px;
+}
+
+.intro h2{
+  padding: 15px ;
+  border-left: 1px solid #fff100;
+  border-bottom: 1px solid #fff100;
+  color: #fff100;
+  font-size: 30px;
+  display: inline-block;
+}
+
+.intro h3{
+  margin-left: 10px;
+  margin-top: 30px;
+  font-size: 27px;
+}
+
+.intro p{
+  padding: 15px;
+  border-left: 1px solid #ffffff;
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+
 @media (max-width: 767px){
 
 .main{
@@ -44,22 +76,7 @@
 }
 
 .title{
-  height: 600px;
-  background-image: url(../images/jump-access.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #ffffff;
-  text-shadow: 1px 1px 10px #000000;
-  font-family: "Zen Old Mincho", serif;
-  font-style: normal;
-}
-
-.link{
-  color: #fff100;
+  height: 400px;
 }
 
 .title h1{
