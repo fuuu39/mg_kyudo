@@ -43,7 +43,7 @@
 }
 
 .intro h2{
-  margin-top: 5px;
+  margin-top: 10px;
   padding: 15px ;
   border-left: 1px solid #fff100;
   border-bottom: 1px solid #fff100;
@@ -113,4 +113,43 @@
   margin-right: 20px;
 }
 
+.intro{
+  font-family: "Zen Old Mincho", serif;
+  font-style: normal;
+  margin-top: 40px;
+  margin-left: 25px;
+  margin-right: 20px;
+}
+
+.intro h2{
+  padding: 10px ;
+  border-left: 1px solid #fff100;
+  border-bottom: 1px solid #fff100;
+  color: #fff100;
+  font-size: 25px;
+  display: inline-block;
+}
+
+.intro h3{
+  margin-left: 10px;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.intro h4{
+  font-family: "Zen Old Mincho", serif;
+  font-style: normal;
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: normal;
+}
+
+.intro p{
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.4;
+}
 }
