@@ -4,6 +4,15 @@
   margin-top: 90px;
 }
 
+.main h2{
+  padding: 10px ;
+  border-left: 1px solid #fff100;
+  border-bottom: 1px solid #fff100;
+  color: #fff100;
+  font-size: 25px;
+  display: inline-block;
+}
+
 @media (max-width: 767px){
 
 .main{
