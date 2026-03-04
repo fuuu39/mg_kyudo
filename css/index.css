@@ -117,6 +117,7 @@
 }
 
 .jump-button img{
+  border-radius: 8px;
   display: block;
   width: 360px;
   height: 230px;
