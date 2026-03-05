@@ -5,7 +5,7 @@
 }
 
 .title{
-  height: 300px;
+  height: 500px;
   background-image: url(../images/schedule_main.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -35,11 +35,19 @@
   margin-left: 40px;
 }
 
+.sched{
+  text-align: center;
+}
+
 .mens h2{
-  color: #fff100;
+  display: inline-block;
+  color: #000000;
+  background-color: #fff100;
   font-size: 25px;
   padding: 15px;
-  border: 2px solid #fff100;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  /* border: 2px solid #ffffff; */
 }
 
 details{
@@ -83,13 +91,42 @@ details{
   padding: 0;
 }
 
-.month{
-  background-color: #232323  
-}
-
 .table td.yellow{
+  /* クラス名がyellowなのにbackground-colorがえんじ色なのは単にめんどくさかったからです。
+  気になるようでしたら変えてください */
   color: #ffffff;
   background-color: #9b003f;
+}
+
+.table{
+  table-layout: fixed;
+  width:auto;
+}
+
+.month{
+  width: 30px;
+}
+
+.day{
+  width: 20px;
+}
+
+.about{
+  width: 300px;
+}
+
+.at{
+  width: 150px;
+}
+
+.notice{
+  width: 150px;
+}
+
+.sched{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
 
@@ -118,4 +155,18 @@ details{
   margin-left: 25px;
   margin-right: 20px;
 }
+
+.mens{
+  font-size: 13px;
+}
+
+.sched{
+  flex-direction: column;
+}
+
+.table{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 }
