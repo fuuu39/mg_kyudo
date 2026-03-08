@@ -74,15 +74,26 @@ details{
 
 .table td{
   border-bottom: 1px solid #ffffff;;
-  border-left: 2px solid #ffffff;
-  border-right: 2px solid #ffffff;
+  border-right: 1px solid #ffffff;
   background-color: #000000
 }
 
+.table td:first-child{
+  border-left: 1px solid #ffffff;
+}
+
 .table th{
-  border: 3px solid #000000;
+  border-right: 2px solid #000000;
   background-color: #fff100;
   color: #000000;
+}
+
+.table th:first-child{
+  border-left: 2px solid #fff100;
+}
+
+.table th:last-child{
+  border-right: 2px solid #fff100;
 }
 
 .table tr.bottom td{
@@ -131,7 +142,12 @@ details{
   gap: 40px;
 }
 
-
+.last{
+  font-size: 18px;
+  margin: 15px;
+  padding-top: 30px;
+  text-align: center;
+}
 
 @media (max-width: 767px){
 
@@ -173,6 +189,10 @@ details{
 .table{
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.last{
+  font-size: 16px;
 }
 
 }

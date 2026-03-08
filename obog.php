@@ -1,10 +1,18 @@
+<?php
+session_start();
+if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+    header('Location: login.php');
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
 <head>
     <meta charset="utf-8">
-    <title>試合結果</title>
-    <meta name="description" content="明治学院大学体育会弓道部のこれまでの試合結果を掲載しております。">
+    <title>白金弓友会</title>
+    <meta name="description" content="こちらは明治学院大学体育会弓道部OB・OG専用ページとなります。">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./js/menu-button.js"></script>
@@ -14,8 +22,9 @@
     <link rel="icon" href="images/topicon.gif" sizes="62*62" type="image/gif" />
     <link rel="shortcut icon" href="images/topicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
-    <link href="./css/result.css" rel="stylesheet">
+    <link href="./css/obog.css" rel="stylesheet">
     <meta name="keywords" content="明治学院大学,明学,MG,MGU,弓道,弓道部,弓,都学,東京都学生弓道連盟,全日本学生弓道連盟,戸塚,白金,学生弓道,体育会" />
+    <meta name="robots" content="noindex">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap" rel="stylesheet">
@@ -48,18 +57,28 @@
     <!-- ここからmain -->
     <main class="main">
         <div class="title">
-        <h1>試合結果</h1>
+        <h1>白金弓友会</h1>
+        <p>白金弓友会は明治学院大学体育会弓道部の卒業生で構成され、<br>卒業生相互の親睦及び現役・OBOG相互の親睦を図るとともに、<br>明治学院大学体育会弓道部の発展に寄与することを目的とした団体です。</p>
         </div>
-        <div class="index">
-        <ul>
-            <li class="year"><a href="#">2026</a></li>
-        </ul>
-        <ul>
-            <li class="year"><a href="#">2025</a></li>
-        </ul>
-        <ul>
-            <li class="year"><a href="#">2024</a></li>
-        </ul>
+        <div class="intro">
+        <h1>1. OB会 役員</h1>
+            <ul>
+                <li>会長　　豊田　重之(1期)</li>
+                <li>副会長　武内　巧（3期）・近藤みどり(６期)</li>
+                <li>会計　　平田　和美(11期)</li>
+                <li>監査　　逸見　敏治(12期)</li>
+            </ul>
+        <iframe class="pdf" src="./pdf/sirokane_rules.pdf"></iframe>
+        <h1>2. OB会費 お振込先</h1>
+        <p>お振込先</p>
+            <ul>
+                <li>みずほ銀行：渋谷中央支店（普通）1258452</li>
+                <li>ゆうちょ銀行：019（ゼロイチキュウ）支店（当座）0585277</li>
+            </ul>
+        <h1>3. 白金弓友会活動報告</h1>
+        <p>会報掲載予定</p>
+        <h1>4. 現役活動報告</h1>
+        <iframe class="pdf" src="./pdf/activity_report.pdf"></iframe>
         </div>
     </main>
     <!-- ここまで -->

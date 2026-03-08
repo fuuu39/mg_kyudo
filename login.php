@@ -6,7 +6,7 @@ $correct_password = "mgukyudo";
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if ($_POST["password"] === $correct_password) {
         $_SESSION["logged_in"] = true;
-        header("Location: obog.html");
+        header("Location: obog.php");
         exit;
     } else {
         $error = "パスワードが違います";
@@ -31,6 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <link rel="stylesheet" href="css/style.css" />
     <link href="./css/login.css" rel="stylesheet">
     <meta name="keywords" content="明治学院大学,明学,MG,MGU,弓道,弓道部,弓,都学,東京都学生弓道連盟,全日本学生弓道連盟,戸塚,白金,学生弓道,体育会" />
+    <meta name="robots" content="noindex">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap" rel="stylesheet">
@@ -52,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                         <li><a href="./schedule.html">活動予定</a></li>
                         <li><a href="./result.html">試合結果</a></li>
                         <li><a href="./freshman.html">入部を希望される方へ</a></li>
-                        <li><a href="./obog.html">OB・OGの方へ</a></li>
+                        <li><a href="./login.php">OB・OGの方へ</a></li>
                         <!-- <li><a href="./member.html">部員・部体制</a></li> -->
                         <!-- <li><a href="./access.html">アクセス</a></li> -->
                         <!-- <li><a href="./links.html">リンク集</a></li> -->

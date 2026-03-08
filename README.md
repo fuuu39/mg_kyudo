@@ -1,1 +1,0 @@
-# fuuu39-MGU_Kyudo

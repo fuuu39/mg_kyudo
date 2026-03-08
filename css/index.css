@@ -194,6 +194,12 @@
   margin-left: 0;
 }
 
+.twitter{
+  max-width: 70%;
+  border: 1px solid #ffffff;
+  padding: 10px;
+}
+
 @media (max-width: 767px){
 
   .first-view{
