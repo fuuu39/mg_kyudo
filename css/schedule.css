@@ -142,7 +142,12 @@ details{
   gap: 40px;
 }
 
-
+.last{
+  font-size: 18px;
+  margin: 15px;
+  padding-top: 30px;
+  text-align: center;
+}
 
 @media (max-width: 767px){
 
@@ -184,6 +189,10 @@ details{
 .table{
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.last{
+  font-size: 16px;
 }
 
 }
