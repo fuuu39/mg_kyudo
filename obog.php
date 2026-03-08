@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
+    header('Location: login.php');
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -38,7 +46,7 @@
                         <li><a href="./schedule.html">活動予定</a></li>
                         <li><a href="./result.html">試合結果</a></li>
                         <li><a href="./freshman.html">入部を希望される方へ</a></li>
-                        <li><a href="./obog.html">OB・OGの方へ</a></li>
+                        <li><a href="./login.php">OB・OGの方へ</a></li>
                     </ul>
                 </nav>
             </div>
@@ -82,7 +90,7 @@
                 <li><a href="./schedule.html">活動予定</a></li>
                 <li><a href="./result.html">試合結果</a></li>
                 <li><a href="./freshman.html">入部を希望される方へ</a></li>
-                <li><a href="./obog.html">OB・OGの方へ</a></li>
+                <li><a href="./login.php">OB・OGの方へ</a></li>
                 <li><a href="./member.html">選手紹介</a></li>
                 <li><a href="./access.html">アクセス</a></li>
             </ul>

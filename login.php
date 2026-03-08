@@ -6,7 +6,7 @@ $correct_password = "mgukyudo";
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if ($_POST["password"] === $correct_password) {
         $_SESSION["logged_in"] = true;
-        header("Location: obog.html");
+        header("Location: obog.php");
         exit;
     } else {
         $error = "パスワードが違います";
@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                         <li><a href="./schedule.html">活動予定</a></li>
                         <li><a href="./result.html">試合結果</a></li>
                         <li><a href="./freshman.html">入部を希望される方へ</a></li>
-                        <li><a href="./obog.html">OB・OGの方へ</a></li>
+                        <li><a href="./login.php">OB・OGの方へ</a></li>
                         <!-- <li><a href="./member.html">部員・部体制</a></li> -->
                         <!-- <li><a href="./access.html">アクセス</a></li> -->
                         <!-- <li><a href="./links.html">リンク集</a></li> -->
