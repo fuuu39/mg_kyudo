@@ -31,6 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <link rel="stylesheet" href="css/style.css" />
     <link href="./css/login.css" rel="stylesheet">
     <meta name="keywords" content="明治学院大学,明学,MG,MGU,弓道,弓道部,弓,都学,東京都学生弓道連盟,全日本学生弓道連盟,戸塚,白金,学生弓道,体育会" />
+    <meta name="robots" content="noindex">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap" rel="stylesheet">
