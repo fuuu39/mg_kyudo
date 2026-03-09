@@ -54,6 +54,10 @@ img{
 
 }
 
+#mask{
+    display: none;
+}
+
 .header-logo{
     display: block;
     width: 400px;
