@@ -60,6 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     </ul>
                 </nav>
             </div>
+            <div id="mask"></div>
         </div>
     </header>
     <!-- ここまで -->
