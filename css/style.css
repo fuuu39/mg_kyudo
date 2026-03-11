@@ -140,7 +140,7 @@ img{
         font-weight: normal;
     }
 
-    .site-menu li:hover{
+    .header .site-menu li:hover{
         background-color: #e4e40ac6;
     }
 
