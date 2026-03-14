@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 .main{
   margin-top: 90px;
 }
@@ -41,6 +46,47 @@
   margin-left: 30px;
   margin-top: 30px;
   margin-bottom: 10px;
+}
+
+.index{
+  align-items: center;
+  display: inline-block;
+  display: flex;
+  padding-top: 30px;
+  padding-left: 40px;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+}
+
+.index h4{
+  font-weight: normal;
+  font-size: 25px;
+  padding-right: 20px;
+  border-right: 1px solid #ffffff;
+}
+
+.index::-webkit-scrollbar{
+  display: none;
+}
+
+.index li{
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+
+.years{
+  font-weight: bold;
+  display: inline-block;
+  background-color: #fff100;
+  font-size: 22px;
+  padding: 10px;
+  color: #000000;
+  font-weight: normal;
+  transition: 0.3s;
+}
+
+.years:hover{
+  background-color: #e4e40ac6;
 }
 
 .member-list{

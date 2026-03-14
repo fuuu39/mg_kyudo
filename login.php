@@ -1,15 +1,34 @@
 <?php
+define('USER_PASSWORD_HASH', ''); //ハッシュ化したパスワード
+define('ADMIN_PASSWORD_HASH', ''); //ハッシュ化したパスワード
+
+ini_set('session.cookie_httponly', 1);
+
 session_start();
 
-$correct_password = "mgukyudo"; 
+$error = '';
 
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    if ($_POST["password"] === $correct_password) {
-        $_SESSION["logged_in"] = true;
-        header("Location: obog.php");
+if ($_SERVER['REQUEST_METHOD'] === 'POST'){
+    $input = $_POST['password'] ?? '';
+
+    if (password_verify($input,ADMIN_PASSWORD_HASH)){
+        session_regenerate_id(true);
+        $_SESSION['logged_in'] == true;
+        $_SESSION['role'] == 'admin';
+        header('Location: admin/index.php');
         exit;
-    } else {
-        $error = "パスワードが違います";
+    } 
+
+    elseif (password_verify($input,USER_PASSWORD_HASH)){
+        session_regenerate_id(true);
+        $_SESSION['logger_in'] == true;
+        $_SESSION['role'] == 'user';
+        header('Location: obog.php');
+        exit;
+    }
+
+    else{
+        $error = 'パスワードが違います！';
     }
 }
 ?>
@@ -69,12 +88,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <main class="main">
         <div class="login">
             <h2>明治学院大学体育会弓道部<br>OB・OG専用ページログイン</h2>
-            <?php if (!empty($error)) echo "<p style='color:red;'>$error</p>"; ?>
+            <?php if (!empty($error)): ?>
+                <p style="color:red;"><?= htmlspecialchars($error) ?></p>
+            <?php endif; ?>
             <form method="post">
                 <input type="password" name="password" required>
                 <button type="submit">ログイン</button>
             </form>
-        </div>
+            </div>
     </main>
     <!-- ここまで -->
 
