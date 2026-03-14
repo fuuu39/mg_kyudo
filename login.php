@@ -1,12 +1,17 @@
 <?php
 session_start();
 
-$correct_password = "mgukyudo"; 
+$correct_password = "mgukyudo";
+$admin_password = "adminhepborn"; 
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if ($_POST["password"] === $correct_password) {
         $_SESSION["logged_in"] = true;
         header("Location: obog.php");
+        exit;
+    } elseif ($_POST["password"] === $admin_password){
+        $_SESSION["logged_in"] = true;
+        header("Location: admin/index.php");
         exit;
     } else {
         $error = "パスワードが違います";
