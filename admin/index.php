@@ -1,23 +1,13 @@
 <?php
 session_start();
 
-$correct_password = "adminhepborn"; 
-
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    if ($_POST["password"] === $correct_password) {
-        $_SESSION["logged_in"] = true;
-        header("Location: register.php");
-        exit;
-    } else {
-        $error = "パスワードが違います";
-    }
-}
-?>
-
-<?php
-session_start();
 if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
-    header('Location: login.php');
+    header('Location: ../login.php');
+    exit;
+}
+
+if ($_SESSION['role'] !== 'admin'){
+    header('Location: ../login.php');
     exit;
 }
 ?>
