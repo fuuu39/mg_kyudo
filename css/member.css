@@ -9,6 +9,20 @@ html{
   margin-top: 90px;
 }
 
+.about{
+  display: block;
+  margin-top: 60px;
+  margin: 60px auto 0 auto;
+  font-size: 20px;
+  padding: 15px;
+  border: 1px solid #ffffff;
+  width: fit-content;
+}
+
+.link{
+  color: #fff100;
+}
+
 .title{
   height: 500px;
   background-image: url(../images/jump-member.jpg);
